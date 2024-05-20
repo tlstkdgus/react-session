@@ -1,3 +1,6 @@
+![image](https://github.com/tlstkdgus/react-session/assets/164618798/6cfd4b70-3b78-4803-a69a-19c62ee38bed)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
