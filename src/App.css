@@ -13,6 +13,15 @@
   }
 }
 
+.black-bg{
+  display: flex;
+  background: black;
+  width: 100%;
+  color: orange;
+  padding-left: 20px;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
