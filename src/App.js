@@ -1,31 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Counter from './counter';
-import Timer from './Timer';
-import { useState } from 'react';
-import TextInput from './State';
-import TimerComponent from './Effect'; 
+// App.jsx
+import React from 'react';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Home from './Pages/Home';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+
+
 
 function App() {
-
-  const [showTimer, setShowTimer] = useState(false);
-
   return (
-    <div className="App">
-      <div className='black-bg'>
-        <h3>멋쟁이사자처럼</h3>
-      </div>
-      <div>
-        {showTimer &&<Timer></Timer>}
-        <button onClick={()=>setShowTimer(!showTimer)}>타이머 열기 / 닫기 </button>
-      </div>
-      <div>
-        <TextInput/>
-      </div>
-      <div>
-        <TimerComponent/>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} /> 
+      </Routes>
+			
+    </BrowserRouter>
   );
 }
 
